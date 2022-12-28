@@ -1,2 +1,1 @@
-# PartyApp
-PartyApp Front-End
+# PARY Front-End
