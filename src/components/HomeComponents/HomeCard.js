@@ -1,13 +1,18 @@
 import React from 'react'
+import { AiOutlineHeart } from "react-icons/ai";
+import { GrAdd } from "react-icons/gr";
+import { HiOutlineTicket } from "react-icons/hi";
+import { VscComment } from "react-icons/vsc";
 
-export const HomeCard = ({id}) => {
+export const HomeCard = () => {
     return (
         <div className="card card_container">
-            <img src="icons/PARY.png" className="card-img-top" alt="..."/>
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="/" className="btn btn-primary">Go somewhere</a>
+            <img src="icons/PARY.png" height={200} className="card-img-top" alt="..."/>
+            <div className="card-body card_contain">
+                <AiOutlineHeart/>
+                <GrAdd/>
+                <HiOutlineTicket/>
+                <VscComment/>
             </div>
         </div>
     )
