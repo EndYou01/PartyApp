@@ -1,43 +1,50 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
-        <header className='top_header'>
-            <nav>
-                <ul className='header_container'>
+        <div className='header'>
+            <nav className='header-container'>
+                
+                <div className='top_header'>
+                    <Link to='/'>
+                        <img height='40' width='80' src="icons/PARY.png" alt="pary"/>
+                    </Link>
+
+                    <Link to='/settings'>
+                        <img height='40' width='40' src="icons/settings.png" alt="pary"/>
+                    </Link>
+                </div>
+                    
+                <ul className='header_content'>
                     <li>    
-                        <NavLink>
-                            <img src="icons/PARY.png" alt="pary"/>
-                        </NavLink>
+                        <Link to='/'>
+                            <img src="icons/home.png" alt="pary"/>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/activity'>
                             <img src="icons/activity.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/reservation'>
                             <img src="icons/reservation.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/calendar'>
                             <img src="icons/calendar.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/notification'>
                             <img src="icons/notification.png" alt="pary"/>
-                        </NavLink>
-                    </li>
-                    <li>    
-                        <NavLink>
-                            <img src="icons/settings.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                 </ul>
             </nav>
-        </header>
+        </div>
     )
 }

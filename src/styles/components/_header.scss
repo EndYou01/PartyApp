@@ -1,23 +1,26 @@
-.header_container{
+.header_content{
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     list-style: none;
-    
 }
-.header_container li{
+.header_content li{
     padding: 0 15px;
 }
-.header_container img{
-    max-width: 40px;
-    max-height: 40px;
+.header_content img{
+    width: 40px;
+    height: 40px;
 }
-.top_header{
-    background-color: rgb(112, 30, 130);
+.header{
+    background-image: url(../../../public/header/header.png);
     width: 100%;
     height: 100%;
-    margin: auto;
+}
+.top_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
 
 @media only screen and (max-width: 900px) {
