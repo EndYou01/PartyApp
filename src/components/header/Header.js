@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
     
     return (
-        <div className='header'>
+        <div className='div'>
             <nav className='header-container'>
                 
                 <div className='top_header'>
@@ -25,21 +25,28 @@ export const Header = () => {
                         </Link>
                     </li>
                     <li>    
+                        
                         <Link to='/activity'>
                             <img src="icons/activity.png" alt="pary"/>
                         </Link>
+                       
                     </li>
                     <li>    
+                        
                         <Link to='/reservation'>
                             <img src="icons/reservation.png" alt="pary"/>
+                        
                         </Link>
                     </li>
                     <li>    
+                        
                         <Link to='/calendar'>
                             <img src="icons/calendar.png" alt="pary"/>
+                       
                         </Link>
                     </li>
                     <li>    
+
                         <Link to='/notification'>
                             <img src="icons/notification.png" alt="pary"/>
                         </Link>
