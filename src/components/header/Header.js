@@ -1,43 +1,44 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
-        <header className='top_header'>
+        <div className='top_header'>
             <nav>
                 <ul className='header_container'>
                     <li>    
-                        <NavLink>
+                        <Link to='/'>
                             <img src="icons/PARY.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/activity'>
                             <img src="icons/activity.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/reservation'>
                             <img src="icons/reservation.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/calendar'>
                             <img src="icons/calendar.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/notification'>
                             <img src="icons/notification.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>    
-                        <NavLink>
+                        <Link to='/settings'>
                             <img src="icons/settings.png" alt="pary"/>
-                        </NavLink>
+                        </Link>
                     </li>
                 </ul>
             </nav>
-        </header>
+        </div>
     )
 }
