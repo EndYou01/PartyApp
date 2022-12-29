@@ -6,14 +6,18 @@ import { VscComment } from "react-icons/vsc";
 
 export const HomeCard = () => {
     return (
-        <div className="card card_container">
-            <img src="icons/PARY.png" height={200} className="card-img-top" alt="..."/>
-            <div className="card-body card_contain">
-                <AiOutlineHeart/>
-                <GrAdd/>
-                <HiOutlineTicket/>
-                <VscComment/>
-            </div>
+        <div className='card_intro'>
+               
+            <div className="card card_container">
+                <img src="icons/PARY.png" height={200} className="card-img-top" alt="..."/>
+                <div className="card-body card_contain">
+                    <AiOutlineHeart/>
+                    <GrAdd/>
+                    <HiOutlineTicket/>
+                    <VscComment/>
+                </div>
+            </div> 
+        
         </div>
     )
 }

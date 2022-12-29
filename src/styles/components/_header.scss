@@ -12,10 +12,15 @@
     height: 40px;
 }
 .header{
+    position: fixed;
     background-image: url(../../../public/header/header.png);
-    padding-bottom: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
     width: 100%;
-    height: 100%;
+}
+.header_container{
+
 }
 .top_header{
     display: flex;

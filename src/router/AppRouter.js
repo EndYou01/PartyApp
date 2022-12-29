@@ -17,7 +17,11 @@ export const AppRouter = () => {
         <BrowserRouter>
 
             <Header/>
-
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Routes>
                 <Route path='/*' element={<HomePage/>}/>
                 <Route path='/activity' element={<ActivityPage />} />
