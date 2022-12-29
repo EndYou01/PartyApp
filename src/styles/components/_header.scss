@@ -1,19 +1,19 @@
-.header_content{
+.bottom_content{
     display: flex;
     justify-content: space-between;
-    margin: 10px;
     padding: 0;
     list-style: none;
 }
-.header_content li{
+.bottom_content li{
     padding: 0 15px;
 }
-.header_content img{
+.bottom_content img{
     width: 40px;
     height: 40px;
 }
 .header{
     background-image: url(../../../public/header/header.png);
+    padding-bottom: 1px;
     width: 100%;
     height: 100%;
 }

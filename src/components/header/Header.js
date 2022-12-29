@@ -3,21 +3,22 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 export const Header = () => {
+    
     return (
         <div className='header'>
             <nav className='header-container'>
                 
                 <div className='top_header'>
                     <Link to='/'>
-                        <img height='40' width='80' src="icons/PARY.png" alt="pary"/>
+                        <img height='30' width='80' src="icons/PARY.png" alt="pary"/>
                     </Link>
 
                     <Link to='/settings'>
-                        <img height='40' width='40' src="icons/settings.png" alt="pary"/>
+                        <img height='30' width='40' src="icons/settings.png" alt="pary"/>
                     </Link>
                 </div>
                     
-                <ul className='header_content'>
+                <ul className='bottom_content'>
                     <li>    
                         <Link to='/'>
                             <img src="icons/home.png" alt="pary"/>
