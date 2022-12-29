@@ -4,18 +4,22 @@ import {
     Routes,
     Route
 } from "react-router-dom";
+import { Header } from '../components/header/Header';
 
 import { ActivityPage } from '../pages/ActivityPage';
 import { CalendarPage } from '../pages/CalendarPage';
-import { IndexPage } from '../pages/IndexPage';
+import { HomePage } from '../pages/HomePage';
 import { NotificationPage } from '../pages/NotificationPage';
 import { ReservationPage } from '../pages/ReservationPage';
 
 export const AppRouter = () => {
     return (
         <BrowserRouter>
+
+            <Header/>
+
             <Routes>
-                <Route path='/*' element={<IndexPage />}/>
+                <Route path='/*' element={<HomePage/>}/>
                 <Route path='/activity' element={<ActivityPage />} />
                 <Route path='/reservations' element={<ReservationPage />} />
                 <Route path='/calendar' element={<CalendarPage />}/>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const IndexPage = () => {
+export const HomePage = () => {
     return(
         <div>
-            IndexPage
+            HomePage...
         </div>
     )
     }
