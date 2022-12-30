@@ -3,7 +3,7 @@ import { useActive } from '../../hooks/useActive'
 
 export const Button = ({src, alt}) => {
 	
-	const [isActive, actionSimpleButton] = useActive(false)
+	const {isActive, actionSimpleButton} = useActive(false)
  
 
 	return (

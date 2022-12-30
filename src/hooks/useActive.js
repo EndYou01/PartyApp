@@ -2,34 +2,29 @@
 import { useState } from 'react'
 import { useCounter } from './useCounter'
 
-export const useActive = ( isActiveBool ) => {
+export const useActive = () => {
 	
 	const[counter, increment, decrement ] = useCounter
 
-	const [isActive, setIsActive] = useState(isActiveBool)
+	const [isActive, setIsActive] = useState(false)
 
 	const actionCounterButton = () => {
 		if(isActive){
 			decrement()
-			setIsActive(false)
 		}else{
 			increment()
-			setIsActive(true)
 		}
+		setIsActive(!isActive)
 	}
 
-	const actionSimpleButton = () => {
-		isActive
-		?
-		setIsActive(false)
-		:
-		setIsActive(true)
-		}
-		return [
+	const actionSimpleButton = () => 
+		setIsActive(!isActive)
+	
+		return {
 			isActive,
 			counter,
 			actionCounterButton,
 			actionSimpleButton
-		]
+		}
 }
 

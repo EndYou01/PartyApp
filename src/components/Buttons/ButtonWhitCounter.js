@@ -6,7 +6,7 @@ import { useActive } from '../../hooks/useActive';
 
 export const ButtonWhitCounter = ({src, alt}) =>{
 
- const [counter, isActive, actionCounterButton ] = useActive(false)
+ const {counter, isActive, actionCounterButton } = useActive(false)
 
 	return(
 		<>
