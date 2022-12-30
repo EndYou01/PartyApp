@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useActive } from '../../hooks/useActive'
 
 export const Button = ({src, alt}) => {
