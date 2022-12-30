@@ -2,11 +2,11 @@
 import { useState } from 'react'
 import { useCounter } from './useCounter'
 
-export const useActive = () => {
+export const useActive = ( isActiveBool ) => {
 	
 	const[counter, increment, decrement ] = useCounter
 
-	const [isActive, setIsActive] = useState(false)
+	const [isActive, setIsActive] = useState(isActiveBool)
 
 	const actionCounterButton = () => {
 		if(isActive){
