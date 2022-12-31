@@ -1,16 +1,18 @@
-import React from 'react'
-import { useActive } from '../../hooks/useActive'
-
+import React, { useState } from 'react'
+import '../../styles/styles.scss'
 export const Button = ({src, alt}) => {
 	
-	const {isActive, actionSimpleButton} = useActive(false)
- 
+	const [isActive, setIsActive ] = useState(false)
+	
+	const actionSimpleButton = () => 
+		setIsActive(!isActive)
+
 
 	return (
 		<>
-			<button onClick={actionSimpleButton}>
+			<button className='buttonComponent' onClick={actionSimpleButton}>
 			
-				<img src={src} alt={alt} />
+				<img className='iconButtonContainer' src={src} alt={alt} />
 		
 			</button>
 		</>

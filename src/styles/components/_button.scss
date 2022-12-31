@@ -1,0 +1,24 @@
+.buttonComponent {
+	max-width: 40px;
+	border: none;
+	background: none;
+}
+.iconButtonContainer{
+	max-width: -webkit-fill-available;
+}
+.buttonCounter {
+	display: flex;
+	align-items: flex-end;
+	
+}
+.listActionBar {
+	list-style:none;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+	border: 1px solid black;
+	border-top: none;
+	border-bottom-left-radius: 25px ;
+	border-bottom-right-radius: 25px ;
+	padding: 5px;
+}

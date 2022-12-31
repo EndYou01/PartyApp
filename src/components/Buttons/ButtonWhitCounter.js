@@ -1,23 +1,31 @@
 import React, { useState } from 'react';
-import { useActive } from '../../hooks/useActive';
-
-
-
+import { useCounter } from '../../hooks/useCounter';
+import '../../styles/styles.scss'
 
 export const ButtonWhitCounter = ({src, alt}) =>{
 
- const {counter, isActive, actionCounterButton } = useActive(false)
+	const [isActive, setIsActive] = useState(false)
+	const {counter, decrement, increment} = useCounter()
 
+
+	const actionCounterButton = () => {
+		if(isActive){
+			decrement()
+		}else{
+			increment()
+		}
+		setIsActive(!isActive)
+	}
 	return(
-		<>
-			<button onClick={actionCounterButton} >
+		<div className='buttonCounter'>
+			<button className='buttonComponent' onClick={actionCounterButton} >
 
-				<img src={src} alt={alt} />
+				<img className='iconButtonContainer' src={src} alt={alt} />
 			
 			</button>	
 
+			<b><span>{counter}</span></b>
 
-			 <p>{counter}</p>
-		</>
+		</div>
 	)
 }
