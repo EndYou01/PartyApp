@@ -13,13 +13,31 @@ import {ButtonWhitCounter} from '../Buttons/ButtonWhitCounter';
 export const ActionBar = () => {
 	
 
+
 	return (
 		<div>
 			<ul className='listActionBar'>
-					<li><ButtonWhitCounter src='assets/actionBar/heart.png' alt={'heart Icon'} /></li>
-					<li><Button src='assets/actionBar/add.png' alt='add Icon' /></li>
-					<li><Button src='assets/actionBar/tickets.png' alt='tickets Icon '/></li>	
-					<li><Button src='assets/actionBar/bubbleChat.png' alt='comments Icon'/></li>						
+
+					<li><ButtonWhitCounter 
+					src={heartIcon} 	 
+					srcAct={heartRedIcon} 
+					alt={'heart Icon'}/>
+					</li>
+					
+					<li><Button 
+							src={addIcon}
+							srcActive={addBlackIcon}
+							alt='add Icon'/></li>
+					
+					<li><Button 
+					src={ticketsIcon} 
+					srcActive={ticketsBlackIcon}
+					alt='tickets Icon '/></li>	
+					
+					<li><Button 
+					src={commentsIcon} 
+					alt='comments Icon'/></li>						
+
 			 </ul>
 		</div>
 	)
