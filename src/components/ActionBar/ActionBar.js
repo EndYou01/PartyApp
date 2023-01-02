@@ -13,13 +13,29 @@ import '../../styles/styles.scss'
 export const ActionBar = () => {
 	
 
+
 	return (
 		<div>
 			<ul className='listActionBar'>
-					<li><ButtonWhitCounter src={heartIcon} alt={'heart Icon'} /></li>
-					<li><Button src={addIcon} alt='add Icon' /></li>
-					<li><Button src={ticketsIcon} alt='tickets Icon '/></li>	
-					<li><Button src={commentsIcon} alt='comments Icon'/></li>						
+					<li><ButtonWhitCounter 
+					src={heartIcon} 	 
+					srcAct={heartRedIcon} 
+					alt={'heart Icon'}/>
+					</li>
+					
+					<li><Button 
+							src={addIcon}
+							srcActive={addBlackIcon}
+							alt='add Icon'/></li>
+					
+					<li><Button 
+					src={ticketsIcon} 
+					srcActive={ticketsBlackIcon}
+					alt='tickets Icon '/></li>	
+					
+					<li><Button 
+					src={commentsIcon} 
+					alt='comments Icon'/></li>						
 			 </ul>
 		</div>
 	)

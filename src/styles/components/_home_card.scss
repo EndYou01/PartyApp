@@ -1,11 +1,14 @@
 .card_intro{
+    margin: 0;
+    padding: 2px;
 }
 .card_container{
     position: initial;
     width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .card_contain{
     display: flex;
     justify-content: space-between;
-    margin: auto 20px;
 }
