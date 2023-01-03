@@ -1,0 +1,34 @@
+.activityPages{
+	display: grid;
+	padding: 10px;
+	grid-template-rows: 1fr	;
+	max-width: 420px;
+	margin: auto;
+}
+.activityList{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	height: 70vh;
+}
+
+.activityType{
+	display: grid;
+	align-content: center;
+	border: solid 2px red;
+	padding: 5px;
+}
+
+.activityCardList{
+	display: flex;
+	flex-wrap: wrap ;
+}
+
+.activityCard{
+	max-width: 50%;
+	padding: 10px;
+}
+
+.imgActivity{
+	width: 100%;
+}
